@@ -21,7 +21,10 @@ dependencies:
   flutter:
     sdk: flutter
 
-  platform_maps_flutter_apple: ^1.0.0-beta
+  # In-repo so it picks up the SPM-enabled apple_maps_flutter. The other two stay
+  # hosted on purpose: the in-repo platform_interface is older than pub.dev's.
+  platform_maps_flutter_apple:
+    path: ../platform_maps_flutter_apple
   platform_maps_flutter_google_android: ^1.0.0-beta
   platform_maps_flutter_platform_interface: ^1.0.0-beta
 

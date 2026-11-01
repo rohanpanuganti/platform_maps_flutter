@@ -20,7 +20,9 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  apple_maps_flutter: ^1.4.0
+  # In-repo copy: pub.dev's 1.4.0 has no Swift Package Manager support.
+  apple_maps_flutter:
+    path: ../apple_maps_flutter
   platform_maps_flutter_platform_interface: ^1.0.0-beta
 
 dev_dependencies:
